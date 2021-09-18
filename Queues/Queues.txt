@@ -1,28 +1,55 @@
 QUEUES
 ------
 
-- Queue is a linear data structure.
-- It operates in FIFO (First In First Out).
-- The point at which data is entered into queue is called REAR.
-- The point at which data is removed from queue is called FRONT.
-- The two operations on queue are :
-    1.Enqueue : Adding element into queue.
-    2.Dequeue : REmoving element from the queue.
-- Time Complexity of both operations are O(n).
-- Space Complexity of O(n) is required to add n elements in a queue.
-- When a queue is full no further elements can be added into queue this condition 
+-   Queue is a linear data structure.
+-   It operates in FIFO (First In First Out).
+-   The point at which data is entered into queue is called REAR.
+-   The point at which data is removed from queue is called FRONT.
+-   The two operations on queue are :
+        1.Enqueue : Adding element into queue.
+        2.Dequeue : REmoving element from the queue.
+-   Time Complexity of both operations are O(n).
+-   Space Complexity of O(n) is required to add n elements in a queue.
+-   When a queue is full no further elements can be added into queue this condition 
     is called OVERFLOW.
-- When a queue is empty no further elements can be deleted from the queue this condition 
+-   When a queue is empty no further elements can be deleted from the queue this condition 
     is called UNDERFLOW.
 
-- In Javascript we have push and shift operation to perform Enqueue and Dequeue.
-- push()    
+-   In Javascript we have push and shift operation to perform Enqueue and Dequeue.
+-   push()    
     : Add an element to the end of array.
     : Time Complexity O(n).
     : Returns the new length of array.
 
-- shift()
+-   shift()
     : Removes the element at the zeroeth index and shifts the values at consecutive indexes down
     : Returns the removed element.
     : undefined, if the array is empty.
     : Time Complexity O(n)
+
+TYPES OF QUEUES
+---------------
+
+1.Cirular Queue
+
+-   Circular Queue is a linear data structure in which the operations 
+    are performed based on FIFO (First In First Out) principle 
+    and the last position is connected back to the first position 
+    to make a circle. It is also called ‘Ring Buffer’. 
+
+-   In a normal Queue, we can insert elements until queue becomes full. 
+    But once queue becomes full, we can not insert the next element 
+    even if there is a space in front of queue.(As a result of some dequeue operation).
+    
+Applications:
+
+Memory Management: 
+    The unused memory locations in the case of ordinary queues 
+    can be utilized in circular queues.
+Traffic system: 
+    In computer controlled traffic system, 
+    circular queues are used to switch on the traffic lights 
+    one by one repeatedly as per the time set.
+CPU Scheduling: 
+    Operating systems often maintain a queue of processes that are 
+    ready to execute or that are waiting for a particular event to occur.
