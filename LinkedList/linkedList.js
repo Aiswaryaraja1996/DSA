@@ -74,6 +74,46 @@ class LinkedList {
     }
   }
 
+  // * Insert element at a particular index
+  insertAtIndex(data, index) {
+    var node = new Node(data);
+    var current = this.head;
+    var prev = current;
+    var i = 0;
+    while (current) {
+      if (index - 1 === i) {
+        prev.next = node;
+        node.next = current;
+        break;
+      } else {
+        i++;
+        prev = current;
+        current = current.next;
+      }
+    }
+  }
+
+  // * Delete element at a particular index from
+  deleteIndex(index) {
+    var current = this.head;
+    var prev = current;
+    var i = 0;
+    while (current) {
+      if (index === 0) {
+        this.head = current.next;
+        break;
+      }
+      if (index - 1 === i) {
+        prev.next = current.next;
+        break;
+      } else {
+        i++;
+        prev = current;
+        current = current.next;
+      }
+    }
+  }
+
   // * To print the elements of linked list with their indexes
   printList() {
     var index = 0;
@@ -93,4 +133,7 @@ list.insertNodeAtBeg(4);
 list.insertNodeAtBeg(9);
 list.insertNodeBef(8, 10);
 list.insertNodeAft(8, 7);
+list.insertAtIndex(6, 3);
+list.deleteIndex(4);
+list.deleteIndex(0);
 list.printList();
