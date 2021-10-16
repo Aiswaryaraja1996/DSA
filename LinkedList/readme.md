@@ -2,31 +2,35 @@
 
 - A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations.
 - Linked List can be defined as collection of objects called nodes that are randomly stored in the memory.
+- On the basis of how each node stores the data the linked list is classified into different types.
 
 ## Types of Linked lists
 
 ### Single Linked List
 
 - A linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list.
+- The first node is called the head and the last node is called the tail.
+- The reference of the tail in single linked list will be null as there is no element after it.
 
 ![](https://static.javatpoint.com/ds/images/linked-list.png)
 
 ### Double Linked List
 
-- Doubly linked list is a type of linked list in which a node contains a pointer to the previous as well as the next node in the sequence.
-- a node consists of three parts: node data, pointer to the next node in sequence (next pointer) , pointer to the previous node (previous pointer).
+- Doubly linked list is a type of linked list in which a node contains a reference to the previous as well as the next node in the sequence.
+- A node consists of three parts: node data, reference to the next node in sequence (next pointer) , reference to the previous node (previous pointer).
 
 ![](https://static.javatpoint.com/ds/images/doubly-linked-list2.png)
 
 ### Circular Single Linked List
 
+- Circular single linked list doesn't contain NULL in any of the node.
 - In a circular Singly linked list, the last node of the list contains a pointer to the first node of the list.
 
 ![](https://static.javatpoint.com/ds/images/circular-singly-linked-list.png)
 
 ### Circular Double Linked List
 
-- Circular doubly linked list doesn't contain NULL in any of the node.
+- Circular double linked list doesn't contain NULL in any of the node.
 - The last node of the list contains the address of the first node of the list. - The first node of the list also contain address of the last node in its previous pointer.
 
 ![](https://static.javatpoint.com/ds/images/circular-doubly-linked-list.png)
