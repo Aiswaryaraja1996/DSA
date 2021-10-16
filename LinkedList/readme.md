@@ -9,27 +9,27 @@
 
 - A linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list.
 
-![Single Linked List](https://static.javatpoint.com/ds/images/linked-list.png)
+![](https://static.javatpoint.com/ds/images/linked-list.png)
 
 ### Double Linked List
 
 - Doubly linked list is a type of linked list in which a node contains a pointer to the previous as well as the next node in the sequence.
 - a node consists of three parts: node data, pointer to the next node in sequence (next pointer) , pointer to the previous node (previous pointer).
 
-![Double Linked List](https://static.javatpoint.com/ds/images/doubly-linked-list2.png)
+![](https://static.javatpoint.com/ds/images/doubly-linked-list2.png)
 
-### Circular Singly Linked List
+### Circular Single Linked List
 
 - In a circular Singly linked list, the last node of the list contains a pointer to the first node of the list.
 
-![Circular singly](https://static.javatpoint.com/ds/images/circular-singly-linked-list.png)
+![](https://static.javatpoint.com/ds/images/circular-singly-linked-list.png)
 
 ### Circular Double Linked List
 
 - Circular doubly linked list doesn't contain NULL in any of the node.
 - The last node of the list contains the address of the first node of the list. - The first node of the list also contain address of the last node in its previous pointer.
 
-![Circular doubly](https://static.javatpoint.com/ds/images/circular-doubly-linked-list.png)]
+![](https://static.javatpoint.com/ds/images/circular-doubly-linked-list.png)
 
 ## Difference between array and linked lists
 
