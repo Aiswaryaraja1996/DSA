@@ -114,6 +114,20 @@ class LinkedList {
     }
   }
 
+  reverseLinkedList(){
+    var current = this.head;
+    var prev = null;
+    var next = null;
+    while(current) {
+        next = current.next;
+        current.next = prev;
+        prev = current;
+        current=next;
+    }
+    this.head = prev;
+    
+  }
+
   // * To print the elements of linked list with their indexes
   printList() {
     var index = 0;
@@ -134,6 +148,7 @@ list.insertNodeAtBeg(9);
 list.insertNodeBef(8, 10);
 list.insertNodeAft(8, 7);
 list.insertAtIndex(6, 3);
-list.deleteIndex(4);
-list.deleteIndex(0);
+// list.deleteIndex(4);
+// list.deleteIndex(0);
+// list.reverseLinkedList();
 list.printList();

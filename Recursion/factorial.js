@@ -1,14 +1,19 @@
-function fact(n){
-    if(n <= 1) return 1;
+function factorial(inp){
+    if(inp==0){
+        return 1;
+    }
     else{
-        return (n * fact(n-1));
+        return inp * factorial(inp - 1);
     }
 }
 
 function runProgram(input){
-    input = Number(input);
-    var soln = fact(input);
-    console.log(soln);
+
+input = Number(input);
+var soln = factorial(input);
+
+console.log(soln);
+
 }
 
 runProgram(5);
